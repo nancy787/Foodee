@@ -1,5 +1,5 @@
 <?php
-include("connection/connect.php"); //INCLUDE CONNECTION
+include("connection/connect.php"); //INCLUDE CONNECTION 
 error_reporting(0); // hide undefine index errors
 session_start(); // temp sessions
 if(isset($_POST['submit']))   // if button is submit
@@ -8,7 +8,7 @@ if(isset($_POST['submit']))   // if button is submit
 	$password = $_POST['password'];
 	
 	if(!empty($_POST["submit"]))   // if records were not empty
-     {
+    {
 	$loginquery ="SELECT * FROM users WHERE username='$username' && password='".md5($password)."'"; //selecting matching records
 	$result=mysqli_query($db, $loginquery); //executing
 	$row=mysqli_fetch_array($result);
