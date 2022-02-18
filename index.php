@@ -1,5 +1,5 @@
 <?php
-include("connection/connect.php"); //INCLUDE CONNECTION 
+include("connection/connect.php"); //INCLUDE CONNECTION  
 error_reporting(0); // hide undefine index errors
 session_start(); // temp sessions
 if(isset($_POST['submit']))   // if button is submit
